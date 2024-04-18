@@ -1,0 +1,44 @@
+
+Step 1)
+    brew install node
+    node -v
+    npm install -g yarn
+    yarn -v
+    yarn init
+    josedanielalvarezramos@iMac-de-Jose APIS % yarn init
+    josedanielalvarezramos@iMac-de-Jose APIS % yarn init
+    yarn init v1.22.22
+    question name (APIS): APIS
+    question version (1.0.0): 1
+    question description: APIS MAL CONFIGURADAS CONSUMO POSTMAN
+    question entry point (index.js): 
+    question repository url: 
+    question author: INBURSA
+    question license (MIT): 
+    question private: 
+    josedanielalvarezramos@iMac-de-Jose APIS % yarn add express
+Step 2)
+    ADD INTO CARPETA APIS FILE index.js
+        ADD TO CODE (RECUERDA VALIDAR PACKAGE.JSON express)
+                    const express = require('express');
+                    const app = express();
+
+                    const PORT = process.env.PORT || 9000;
+
+                    app.use(express.json);
+
+                    app.get('/error/condusef',(req,rest)=>{
+
+                    const requestBody = req.body;
+                    rest.json({
+                    requestBody
+                    })
+
+                    });
+
+                    app.listen(PORT,()=>{
+
+                    console.log("Api arriba");
+                    })
+Step 3) Node 
+    danielalvarezmacbook9441@gmail.com
