@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "1",
+  "description": "APIS MAL CONFIGURADAS CONSUMO POSTMAN",
+  "main": "index.js",
+  "author": "INBURSA",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
